@@ -4,7 +4,29 @@
     <title>Document</title>
     <script src="js/index.js"></script>
 </head>
-<body>
-    
+<body onload="loaded()">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <td><input id="pId" type="number"></td>
+            <td><input id="pName" type="text"></td>
+            <td><input id="pSales" type="number"></td>
+        </tbody>
+    </table>
+    <button onclick="add()">Add</button>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Sales</th>
+            </tr>
+        </thead>
+        <tbody id="custs"></tbody>
+    </table>
 </body>
 </html>
