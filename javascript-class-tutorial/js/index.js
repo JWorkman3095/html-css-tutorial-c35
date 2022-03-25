@@ -1,3 +1,11 @@
+$().ready(
+     //() => {console.log("jQuery is ready!")}, //test to show you ae connected
+
+     $("#addBtn").on("click", () => {
+        add();
+     }),
+);
+
 class Customer {
     id;
     name;
@@ -18,7 +26,7 @@ class Customer {
 let customers = [
     new Customer(1, "MAX", 1000),
     new Customer(2, "PG", 10000),
-    new Customer(3, "TREE", 8900)
+    new Customer(3, "TREE", 8900),
 ];
 
 const loaded = () => {
